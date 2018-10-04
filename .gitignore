@@ -1,3 +1,4 @@
 /node_modules
 /docs/.vuepress
 /gh-pages-push.sh
+*.log
