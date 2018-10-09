@@ -3,6 +3,7 @@ var CONST = require('./const');
 module.exports = {
 	title: `Jung's TIL`,
 	description: 'Today I Learn',
+	plugins: [ '@vuepress/plugin-back-to-top' ],
 	base: '/TIL/',
 	themeConfig: {
 		nav: [
@@ -23,9 +24,16 @@ module.exports = {
 					'2018-10/04',
 					'2018-10/05',
 					'2018-10/07',
-					'2018-10/08'
+					'2018-10/08',
+					'2018-10/09'
 				]
 			}
 		]
+	},
+	markdown: {
+		toc: {
+			includeLevel: [ 2, 3, 4 ]
+		},
+		lineNumbers: true
 	}
 };
