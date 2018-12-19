@@ -2,7 +2,8 @@
 	"scripts": {
 		"dev": "vuepress dev documents",
 		"build": "vuepress build documents",
-		"deploy": "git push -f git@github.com:JungHanYoung/TIL.git master:gh-pages"
+		"deploy": "git push -f git@github.com:JungHanYoung/TIL.git master:gh-pages",
+		"docs:dev": "vuepress dev docs"
 	},
 	"devDependencies": {
 		"@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
