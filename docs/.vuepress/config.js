@@ -3,7 +3,7 @@ var CONST = require('./const');
 module.exports = {
 	title: `Jung's TIL`,
 	description: 'Today I Learn',
-	plugins: [ '@vuepress/plugin-back-to-top' ],
+	plugins: [ '@vuepress/back-to-top' ],
 	base: '/TIL/',
 	themeConfig: {
 		nav: [
@@ -35,7 +35,7 @@ module.exports = {
 			},
 			{
 				title: '2018-12',
-				children: [ '2018-12/19', '2018-12/20' ]
+				children: [ '2018-12/19', '2018-12/20', '2018-12/22' ]
 			}
 		]
 	},
