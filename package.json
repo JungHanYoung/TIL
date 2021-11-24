@@ -1,10 +1,11 @@
 {
 	"scripts": {
-		"dev": "vuepress dev documents",
-		"build": "vuepress build documents",
-		"deploy": "git push -f git@github.com:JungHanYoung/TIL.git master:gh-pages",
-		"docs:dev": "vuepress dev docs",
-		"docs:build": "vuepress build docs"
+		"publish": "sh ./deploy.sh",
+		"dev": "vuepress dev docs",
+		"build": "vuepress build docs",
+		"prepublish": "npm run build",
+		"prebuild": "npm run clean",
+		"clean": "rm -rf docs/.vuepress/dist"
 	},
 	"devDependencies": {
 		"@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
